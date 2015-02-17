@@ -1,0 +1,5 @@
+<launch>
+	<node name="arbotix" pkg="arbotix_python" type="arbotix_driver" output="screen">
+		<rosparam file="$(find stikklar_arbotix_driver)/config/stikklar.yaml" command="load" />
+	</node>
+</launch>
