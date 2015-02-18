@@ -5,7 +5,7 @@ project(stikklar_arbotix_driver)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  arbotix
+  arbotix_python
   rospy
   std_msgs
 )
@@ -82,7 +82,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES stikklar_arbotix_driver
-#  CATKIN_DEPENDS arbotix rospy std_msgs
+#  CATKIN_DEPENDS arbotix_python rospy std_msgs
 #  DEPENDS system_lib
 )
 

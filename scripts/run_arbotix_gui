@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "Arbotix GUI"
+arbotix_gui

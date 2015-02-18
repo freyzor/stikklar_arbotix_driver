@@ -4,6 +4,7 @@ script to generate arbotix_driver compatible yaml config file
 # from the urdfdom-py package
 from urdf_parser_py.urdf import URDF
 import yaml
+import math
 
 # make sure we have and up to date version by running
 # rosrun xacro xacro.py stikklar.urdf.xacro > stikklar.urdf
@@ -61,11 +62,24 @@ def get_joint_dict_from_urdf(joint):
     info = {
         "type": "dynamixel",
         "id": get_id(joint.name),
-        "max_angle": joint.limit.upper,
-        "min_angle": joint.limit.lower,
-        "max_speed": joint.limit.velocity,
+        "max_angle": math.degrees(joint.limit.upper),
+        "min_angle": math.degrees(joint.limit.lower),
+        # "max_speed": joint.limit.velocity,
         "inverted": get_inverted(joint.name),
         "readable": True,
+    }
+    return info
+
+
+def get_continuous_joint_dict_from_urdf(joint):
+    info = {
+        "type": "dynamixel",
+        "id": get_id(joint.name),
+        "max_angle": 180,
+        "min_angle": -180,
+        # "max_speed": 100,
+        "inverted": get_inverted(joint.name),
+        "readable": False,
     }
     return info
 
@@ -75,6 +89,8 @@ def create_arbotix_joint_config(robot):
     for joint in robot.joint_map.itervalues():
         if joint.type == "revolute":
             joints[joint.name] = get_joint_dict_from_urdf(joint)
+        elif joint.type == "continuous":
+            joints[joint.name] = get_continuous_joint_dict_from_urdf(joint)
     return joints
 
 

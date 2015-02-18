@@ -4,114 +4,128 @@ joints:
   lf_coxa_bone_joint:
     id: 9
     inverted: true
-    max_angle: 2.29074464324
-    max_speed: 100.0
-    min_angle: -2.31119772041
+    max_angle: 131.24999999985346
+    min_angle: -132.42187499974986
     readable: true
     type: dynamixel
   lf_femur_bone_joint:
     id: 10
     inverted: false
-    max_angle: 1.72828502102
-    max_speed: 100.0
-    min_angle: -1.78964425253
+    max_angle: 99.02343750012477
+    min_angle: -102.53906249981391
     readable: true
     type: dynamixel
   lf_tibia_bone_joint:
     id: 11
     inverted: true
-    max_angle: 2.443
-    max_speed: 100.0
-    min_angle: -2.443
+    max_angle: 139.97358935046012
+    min_angle: -139.97358935046012
     readable: true
+    type: dynamixel
+  lf_wheel_joint:
+    id: 12
+    inverted: false
+    max_angle: 180
+    min_angle: -180
+    readable: false
     type: dynamixel
   lr_coxa_bone_joint:
     id: 13
     inverted: false
-    max_angle: 2.29074464324
-    max_speed: 100.0
-    min_angle: -2.31119772041
+    max_angle: 131.24999999985346
+    min_angle: -132.42187499974986
     readable: true
     type: dynamixel
   lr_femur_bone_joint:
     id: 14
     inverted: false
-    max_angle: 1.72828502102
-    max_speed: 100.0
-    min_angle: -1.78964425253
+    max_angle: 99.02343750012477
+    min_angle: -102.53906249981391
     readable: true
     type: dynamixel
   lr_tibia_bone_joint:
     id: 15
     inverted: true
-    max_angle: 2.443
-    max_speed: 100.0
-    min_angle: -2.443
+    max_angle: 139.97358935046012
+    min_angle: -139.97358935046012
     readable: true
+    type: dynamixel
+  lr_wheel_joint:
+    id: 16
+    inverted: true
+    max_angle: 180
+    min_angle: -180
+    readable: false
     type: dynamixel
   neck_pan_joint:
     id: 17
     inverted: false
-    max_angle: 2.61799
-    max_speed: 100.0
-    min_angle: -2.61799
+    max_angle: 149.9997778074544
+    min_angle: -149.9997778074544
     readable: true
     type: dynamixel
   neck_tilt_joint:
     id: 18
     inverted: false
-    max_angle: 1.5707
-    max_speed: 100.0
-    min_angle: -1.5707
+    max_angle: 89.9944808811984
+    min_angle: -89.9944808811984
     readable: true
     type: dynamixel
   rf_coxa_bone_joint:
     id: 1
     inverted: false
-    max_angle: 2.29074464324
-    max_speed: 100.0
-    min_angle: -2.31119772041
+    max_angle: 131.24999999985346
+    min_angle: -132.42187499974986
     readable: true
     type: dynamixel
   rf_femur_bone_joint:
     id: 2
     inverted: false
-    max_angle: 1.72828502102
-    max_speed: 100.0
-    min_angle: -1.78964425253
+    max_angle: 99.02343750012477
+    min_angle: -102.53906249981391
     readable: true
     type: dynamixel
   rf_tibia_bone_joint:
     id: 3
     inverted: true
-    max_angle: 2.443
-    max_speed: 100.0
-    min_angle: -2.443
+    max_angle: 139.97358935046012
+    min_angle: -139.97358935046012
     readable: true
+    type: dynamixel
+  rf_wheel_joint:
+    id: 4
+    inverted: true
+    max_angle: 180
+    min_angle: -180
+    readable: false
     type: dynamixel
   rr_coxa_bone_joint:
     id: 5
     inverted: true
-    max_angle: 2.29074464324
-    max_speed: 100.0
-    min_angle: -2.31119772041
+    max_angle: 131.24999999985346
+    min_angle: -132.42187499974986
     readable: true
     type: dynamixel
   rr_femur_bone_joint:
     id: 6
     inverted: false
-    max_angle: 1.72828502102
-    max_speed: 100.0
-    min_angle: -1.78964425253
+    max_angle: 99.02343750012477
+    min_angle: -102.53906249981391
     readable: true
     type: dynamixel
   rr_tibia_bone_joint:
     id: 7
     inverted: true
-    max_angle: 2.443
-    max_speed: 100.0
-    min_angle: -2.443
+    max_angle: 139.97358935046012
+    min_angle: -139.97358935046012
     readable: true
+    type: dynamixel
+  rr_wheel_joint:
+    id: 8
+    inverted: false
+    max_angle: 180
+    min_angle: -180
+    readable: false
     type: dynamixel
 port: /dev/ttyUSB0
 rate: 20.0
